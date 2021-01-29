@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">YouTube Download</string>
+    <string name="error_no_yt_link">Not a valid YouTube link!</string>
+    <string name="app_update">Couldn\'t extract URLs you may need update!</string>
+
+</resources>

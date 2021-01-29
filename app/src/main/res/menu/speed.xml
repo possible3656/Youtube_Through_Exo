@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/one"
+        android:title="0.25x"/>
+
+    <item
+        android:id="@+id/two"
+        android:title="0.5x"/>
+
+    <item
+        android:id="@+id/three"
+        android:title="0.75x"/>
+    <item
+        android:id="@+id/four"
+        android:title="1x"/>
+
+    <item
+        android:id="@+id/five"
+        android:title="1.25x"/>
+
+    <item
+        android:id="@+id/six"
+        android:title="1.5x"/>
+
+    <item
+        android:id="@+id/seven"
+        android:title="2x"/>
+
+</menu>

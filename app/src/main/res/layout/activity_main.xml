@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/video_player_view"
+        android:layout_width="match_parent"
+
+        android:layout_height="250dp"
+        app:show_buffering="always">
+
+        <FrameLayout
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+
+            android:enabled="false"
+            android:layout_marginEnd="40dp"
+            android:background="#50000000"
+            >
+
+            <ImageView
+                android:id="@+id/fullscreenButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_fullscreen_24" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/moreButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+
+            android:enabled="false"
+            android:background="#50000000"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_more_vert_24" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/exoo_rew"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="45dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <FrameLayout
+                android:id="@+id/exoo_ffwd"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="45dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+
+
+    </com.google.android.exoplayer2.ui.PlayerView>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/gotoDownloads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video_player_view"
+        android:layout_centerHorizontal="true"
+        android:enabled="true"
+        android:layout_marginTop="30dp"
+        android:onClick="gotodownloadSection"
+        android:text="Offline downloads"
+
+        />
+
+    <EditText
+        android:id="@+id/edttxt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:hint="paste your url" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/edttxt"
+        android:onClick="playVideo"
+        android:text="Load video" />
+</RelativeLayout>
